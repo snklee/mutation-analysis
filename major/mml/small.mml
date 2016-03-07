@@ -1,0 +1,5 @@
+list_aor={+,-,*,/,%};
+BIN(+)->list_aor;
+
+// Enable all operators
+AOR;
