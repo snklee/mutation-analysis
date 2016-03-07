@@ -2,11 +2,15 @@
 
 MAJOR_HOME="../.."
 
+echo "complile the mml"
+$MAJOR_HOME/bin/mmlc $MAJOR_HOME/mml/small.mml
+
+
 echo
 echo "Compiling and mutating project"
-echo "(ant -Dmutation=\"=\$MAJOR_HOME/mml/all.mml.bin\" clean compile)"
+echo "(ant -Dmutation=\"=\$MAJOR_HOME/mml/small.mml.bin\" clean compile)"
 echo
-$MAJOR_HOME/bin/ant -Dmutation="=$MAJOR_HOME/mml/all.mml.bin" clean compile
+$MAJOR_HOME/bin/ant -Dmutation="=$MAJOR_HOME/mml/small.mml.bin" clean compile
 
 echo
 echo "Compiling tests"
