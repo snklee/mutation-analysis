@@ -1,3 +1,8 @@
+!!! NOTE TO GRADER !!!
+This is report uses Github flavored markdown. For a better readability, please use markdown readers. Alternatively, you can view README.md of the project on my github. Here is the link: https://github.com/snklee/mutation-analysis
+
+
+
 # Mutation analysis of Jsoup project
 
 ## Jsoup as target of analysis
@@ -64,38 +69,38 @@ Here is the target method selected:
 
 
 ### Original line from mutants.log:
-
-| Mutant Number | Mutant |
-|--- | --- |
-| 1600 | ```<(int,int):!=(int,int):org.jsoup.parser.CharacterReader@consumeHexSequence:227:pos < length |==> pos != length``` |
-| 1601 | ```<(int,int):<=(int,int):org.jsoup.parser.CharacterReader@consumeHexSequence:227:pos < length |==> pos <= length``` |
-| 1602 | ```<(int,int):FALSE(int,int):org.jsoup.parser.CharacterReader@consumeHexSequence:227:pos < length |==> false``` |
-| 1603 | ```>=(int,int):==(int,int):org.jsoup.parser.CharacterReader@consumeHexSequence:229:c >= '0' |==> c == '0'``` |
-| 1604 | ```>=(int,int):>(int,int):org.jsoup.parser.CharacterReader@consumeHexSequence:229:c >= '0' |==> c > '0'``` |
-| 1605 | ```>=(int,int):TRUE(int,int):org.jsoup.parser.CharacterReader@consumeHexSequence:229:c >= '0' |==> true``` |
-| 1606 | ```<=(int,int):<(int,int):org.jsoup.parser.CharacterReader@consumeHexSequence:229:c <= '9' |==> c < '9'``` |
-| 1607 | ```<=(int,int):==(int,int):org.jsoup.parser.CharacterReader@consumeHexSequence:229:c <= '9' |==> c == '9'``` |
-| 1608 | ```<=(int,int):TRUE(int,int):org.jsoup.parser.CharacterReader@consumeHexSequence:229:c <= '9' |==> true``` |
-| 1609 | ```&&(boolean,boolean):==(boolean,boolean):org.jsoup.parser.CharacterReader@consumeHexSequence:229:c >= '0' && c <= '9' |==> c >= '0' == c <= '9'``` |
-| 1610 | ```&&(boolean,boolean):FALSE(boolean,boolean):org.jsoup.parser.CharacterReader@consumeHexSequence:229:c >= '0' && c <= '9' |==> false``` |
-| 1611 | ```&&(boolean,boolean):LHS(boolean,boolean):org.jsoup.parser.CharacterReader@consumeHexSequence:229:c >= '0' && c <= '9' |==> c >= '0'``` |
-| 1619 | ```&&(boolean,boolean):==(boolean,boolean):org.jsoup.parser.CharacterReader@consumeHexSequence:229:c >= 'A' && c <= 'F' |==> c >= 'A' == c <= 'F'``` |
-| 1620 | ```&&(boolean,boolean):FALSE(boolean,boolean):org.jsoup.parser.CharacterReader@consumeHexSequence:229:c >= 'A' && c <= 'F' |==> false``` |
-| 1621 | ```&&(boolean,boolean):LHS(boolean,boolean):org.jsoup.parser.CharacterReader@consumeHexSequence:229:c >= 'A' && c <= 'F' |==> c >= 'A'``` |
-| 1622 | ```&&(boolean,boolean):RHS(boolean,boolean):org.jsoup.parser.CharacterReader@consumeHexSequence:229:c >= 'A' && c <= 'F' |==> c <= 'F'``` |
-| 1623 | ```||(boolean,boolean):!=(boolean,boolean):org.jsoup.parser.CharacterReader@consumeHexSequence:229:(c >= '0' && c <= '9') || (c >= 'A' && c <= 'F') |==> (c >= '0' && c <= '9') != (c >= 'A' && c <= 'F')``` |
-| 1624 | ```||(boolean,boolean):LHS(boolean,boolean):org.jsoup.parser.CharacterReader@consumeHexSequence:229:(c >= '0' && c <= '9') || (c >= 'A' && c <= 'F') |==> (c >= '0' && c <= '9')``` |
-| 1625 | ```||(boolean,boolean):RHS(boolean,boolean):org.jsoup.parser.CharacterReader@consumeHexSequence:229:(c >= '0' && c <= '9') || (c >= 'A' && c <= 'F') |==> (c >= 'A' && c <= 'F')``` |
-| 1626 | ```||(boolean,boolean):TRUE(boolean,boolean):org.jsoup.parser.CharacterReader@consumeHexSequence:229:(c >= '0' && c <= '9') || (c >= 'A' && c <= 'F') |==> true``` |
-| 1627 | ```>=(int,int):==(int,int):org.jsoup.parser.CharacterReader@consumeHexSequence:229:c >= 'a' |==> c == 'a'``` |
-| 1641 | ```<INC/DEC>:<NO-OP>:org.jsoup.parser.CharacterReader@consumeHexSequence:230:pos++ |==> <NO-OP>``` |
-| 1642 | ```-(int,int):%(int,int):org.jsoup.parser.CharacterReader@consumeHexSequence:234:pos - start |==> pos % start``` |
-| 1643 | ```-(int,int):*(int,int):org.jsoup.parser.CharacterReader@consumeHexSequence:234:pos - start |==> pos * start``` |
-| 1644 | ```-(int,int):+(int,int):org.jsoup.parser.CharacterReader@consumeHexSequence:234:pos - start |==> pos + start``` |
-| 1645 | ```-(int,int):/(int,int):org.jsoup.parser.CharacterReader@consumeHexSequence:234:pos - start |==> pos / start``` |
+------
+Mutant Number | Mutant
+--- | ---
+1600 | ```<(int,int):!=(int,int):org.jsoup.parser.CharacterReader@consumeHexSequence:227:pos < length |==> pos != length```
+1601 | ```<(int,int):<=(int,int):org.jsoup.parser.CharacterReader@consumeHexSequence:227:pos < length |==> pos <= length```
+1602 | ```<(int,int):FALSE(int,int):org.jsoup.parser.CharacterReader@consumeHexSequence:227:pos < length |==> false```
+1603 | ```>=(int,int):==(int,int):org.jsoup.parser.CharacterReader@consumeHexSequence:229:c >= '0' |==> c == '0'```
+1604 | ```>=(int,int):>(int,int):org.jsoup.parser.CharacterReader@consumeHexSequence:229:c >= '0' |==> c > '0'```
+1605 | ```>=(int,int):TRUE(int,int):org.jsoup.parser.CharacterReader@consumeHexSequence:229:c >= '0' |==> true```
+1606 | ```<=(int,int):<(int,int):org.jsoup.parser.CharacterReader@consumeHexSequence:229:c <= '9' |==> c < '9'```
+1607 | ```<=(int,int):==(int,int):org.jsoup.parser.CharacterReader@consumeHexSequence:229:c <= '9' |==> c == '9'```
+1608 | ```<=(int,int):TRUE(int,int):org.jsoup.parser.CharacterReader@consumeHexSequence:229:c <= '9' |==> true```
+1609 | ```&&(boolean,boolean):==(boolean,boolean):org.jsoup.parser.CharacterReader@consumeHexSequence:229:c >= '0' && c <= '9' |==> c >= '0' == c <= '9'
+1610 | ```&&(boolean,boolean):FALSE(boolean,boolean):org.jsoup.parser.CharacterReader@consumeHexSequence:229:c >= '0' && c <= '9' |==> false```
+1611 | ```&&(boolean,boolean):LHS(boolean,boolean):org.jsoup.parser.CharacterReader@consumeHexSequence:229:c >= '0' && c <= '9' |==> c >= '0'```
+1619 | ```&&(boolean,boolean):==(boolean,boolean):org.jsoup.parser.CharacterReader@consumeHexSequence:229:c >= 'A' && c <= 'F' |==> c >= 'A' == c <= 'F'```
+1620 | ```&&(boolean,boolean):FALSE(boolean,boolean):org.jsoup.parser.CharacterReader@consumeHexSequence:229:c >= 'A' && c <= 'F' |==> false```
+1621 | ```&&(boolean,boolean):LHS(boolean,boolean):org.jsoup.parser.CharacterReader@consumeHexSequence:229:c >= 'A' && c <= 'F' |==> c >= 'A'```
+1622 | ```&&(boolean,boolean):RHS(boolean,boolean):org.jsoup.parser.CharacterReader@consumeHexSequence:229:c >= 'A' && c <= 'F' |==> c <= 'F'```
+1623 | ```||(boolean,boolean):!=(boolean,boolean):org.jsoup.parser.CharacterReader@consumeHexSequence:229:(c >= '0' && c <= '9') || (c >= 'A' && c <= 'F') |==> (c >= '0' && c <= '9') != (c >= 'A' && c <= 'F')```
+1624 | ```||(boolean,boolean):LHS(boolean,boolean):org.jsoup.parser.CharacterReader@consumeHexSequence:229:(c >= '0' && c <= '9') || (c >= 'A' && c <= 'F') |==> (c >= '0' && c <= '9')```
+1625 | ```||(boolean,boolean):RHS(boolean,boolean):org.jsoup.parser.CharacterReader@consumeHexSequence:229:(c >= '0' && c <= '9') || (c >= 'A' && c <= 'F') |==> (c >= 'A' && c <= 'F')```
+1626 | ```||(boolean,boolean):TRUE(boolean,boolean):org.jsoup.parser.CharacterReader@consumeHexSequence:229:(c >= '0' && c <= '9') || (c >= 'A' && c <= 'F') |==> true```
+1627 | ```>=(int,int):==(int,int):org.jsoup.parser.CharacterReader@consumeHexSequence:229:c >= 'a' |==> c == 'a'```
+1641 | ```<INC/DEC>:<NO-OP>:org.jsoup.parser.CharacterReader@consumeHexSequence:230:pos++ |==> <NO-OP>```
+1642 | ```-(int,int):%(int,int):org.jsoup.parser.CharacterReader@consumeHexSequence:234:pos - start |==> pos % start```
+1643 | ```-(int,int):*(int,int):org.jsoup.parser.CharacterReader@consumeHexSequence:234:pos - start |==> pos * start```
+1644 | ```-(int,int):+(int,int):org.jsoup.parser.CharacterReader@consumeHexSequence:234:pos - start |==> pos + start```
+1645 | ```-(int,int):/(int,int):org.jsoup.parser.CharacterReader@consumeHexSequence:234:pos - start |==> pos / start```
 
 ### Analysis for each mutant
-
+------
 
 Mutant Number | Operator Type | What's Changed | Status | Analysis 
 --- | --- | --- | --- | --- 
